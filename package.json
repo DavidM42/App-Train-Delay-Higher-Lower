@@ -1,0 +1,47 @@
+{
+  "name": "app-train-delay-higher-lower",
+  "main": "app.js",
+  "displayName": "App Train Delay Higher Lower",
+  "version": "1.0.0",
+  "description": "Higher Lower Game but as Svelte Native app",
+  "author": "DavidM42",
+  "license": "SEE LICENSE file",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "preview": "tns preview --no-hmr",
+    "android": "tns run android --no-hmr",
+    "debug": "tns debug android"
+  },
+  "keywords": [
+    "nstudio",
+    "nativescript",
+    "mobile",
+    "{N}",
+    "tns",
+    "template",
+    "category-general",
+    "svelte",
+    "svelte-native"
+  ],
+  "repository": "<fill-your-repository-here>",
+  "homepage": "https://github.com/NativeScript/nativescript-app-templates",
+  "bugs": {
+    "url": "https://github.com/NativeScript/NativeScript/issues"
+  },
+  "dependencies": {
+    "@nativescript/core": "~7.1.0",
+    "@nativescript/theme": "~2.3.0",
+    "svelte-native": "~0.9.4"
+  },
+  "devDependencies": {
+    "@nativescript/android": "7.0.1",
+    "@nativescript/webpack": "~4.0.0",
+    "svelte": "~3.24.1",
+    "svelte-loader-hot": "~0.3.1",
+    "svelte-native-preprocessor": "^0.2.0",
+    "svelte-preprocess": "^4.5.1",
+    "typescript": "~4.0.3"
+  }
+}
