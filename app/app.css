@@ -40,7 +40,7 @@ The imported CSS rules must precede all other types of rules.
 /* Licensing */
 /* have to use super specific selector so
 that weight is high enough to be used from global css file out */
-button.fabnativ.licenseBtn {
+button.fab.licenseBtn {
 	/* see https://docs.nativescript.org/ui/styling#nativescript-specific-css-properties-Using */
 	android-elevation: 0;
 
