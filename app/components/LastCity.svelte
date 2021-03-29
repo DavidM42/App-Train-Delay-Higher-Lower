@@ -6,7 +6,7 @@
 </script>
 
 <page height="45%"
-	style="background-image: url('{station.photoUrl}') no-repeat center center fixed;"
+	style="background-image: url('~/assets/station-images/{station.photoName}') no-repeat center center fixed;"
 >
 	<flexboxLayout class="darken" flexDirection="column" alignItems="center" justifyContent="center" flexWrap="wrap">
 		<label class="title" textWrap="{true}">{station.name}</label>
