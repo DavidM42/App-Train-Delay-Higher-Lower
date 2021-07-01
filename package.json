@@ -9,6 +9,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "nativescript": {
+    "id": "com.merzlabs.traindelayhl"
+  },
   "scripts": {
     "preview": "tns preview --no-hmr",
     "android": "tns run android --no-hmr",

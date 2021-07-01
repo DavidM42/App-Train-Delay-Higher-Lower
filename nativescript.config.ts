@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'com.merzlabs.TrainDelayHigherLower',
+  id: 'com.merzlabs.traindelayhl',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {
