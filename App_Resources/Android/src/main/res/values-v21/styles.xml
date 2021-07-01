@@ -9,6 +9,9 @@
     </style>
 
     <style name="AppTheme" parent="AppThemeBase21">
+        <!-- colorize navigation bar see https://stackoverflow.com/a/27839184 -->
+        <!-- TODO does not work but windowTranslucentNavigation in styles.xml is good too -->
+        <item name="android:navigationBarColor">@color/ns_primaryDark</item>
     </style>
 
     <!-- Default style for DatePicker - in spinner mode -->

@@ -95,10 +95,10 @@
         Highscore.highscore = score;
       }
 
-      // nextGuess after 1,5s
-      setTimeout(() => nextGuess(), 1250);
+      // nextGuess after 1s
+      setTimeout(() => nextGuess(), 1000);
     } else {
-      // send to failed screen after 1,5s
+      // send to failed screen after 2s
       setTimeout(() => (failed = true), 2000);
     }
   };
@@ -127,11 +127,11 @@
   initialize();
 </script>
 
-<page class="bg">
-  <actionBar flat="true" title="Tain Delay Higher Lower" android.icon="res://icon" android.iconVisibility="always" />
+
+<page class="bg" actionBarHidden="true" statusBarStyle="dark" backgroundSpanUnderStatusBar="true">
+  <actionBar flat="true" title="Zugverspätung Higher Lower" android.icon="res://icon" android.iconVisibility="always" />
   <flexboxLayout flexDirection="column" justifyContent="center">
 
-    <!-- TODO (in progress) cache all station images for faster loads -->
     {#if isFirstStart}}
       <Intro on:tap={startedNow}/>
     {:else if failed}
