@@ -1,5 +1,13 @@
 <script lang="ts">
+	import * as SocialShare from "nativescript-social-share";
+
 	export let score: number;
+
+	function shareScore() {
+		SocialShare.shareText(`Ich habe ${score} Punkte im Zugverspätung Higher Lower Game erreicht. Schaffst du es meinen Score zu übertreffen?
+		https://play.google.com/store/apps/details?id=com.merzlabs.traindelayhl`);
+	}
+
 </script>
 
 <page>
@@ -7,6 +15,10 @@
 		<label class="title" textWrap="{true}">Dein Ergebnis</label>
 		<label class="score" textWrap="{true}">{score} Punkte</label>
 		
+		{#if score >= 5}
+			<button text="Score teilen" on:tap="{shareScore}" />
+		{/if}
+
 		{#if score == 0}
 			<!-- TODO think if want to use feedback gifs https://github.com/bradmartin/nativescript-gif  -->
 			<!-- <gif:gif src="~/assets/bad.gif" alt="Sad result chihuaha falling down" /> -->
