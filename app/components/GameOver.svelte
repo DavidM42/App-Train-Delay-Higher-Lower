@@ -24,9 +24,15 @@
 			<!-- <gif:gif src="~/assets/bad.gif" alt="Sad result chihuaha falling down" /> -->
 			<label class="subtitle emphasize" textWrap="{true}">Schwach!</label>
 		{:else if score > 0 && score < 3}
-			<label class="subtitle" textWrap="{true}">Naja wenigstens etwas</label>
-		{:else}
+			<label class="subtitle" textWrap="{true}">Wenigstens etwas!</label>
+		{:else if score >= 3 && score < 10}
 			<label class="subtitle" textWrap="{true}">Schon mal nicht schlecht</label>
+		{:else if score >= 10 && score < 20}
+			<label class="subtitle" textWrap="{true}">Oha! Das ist doch mal etwas</label>
+		{:else if score >= 20 && score < 30}
+			<label class="subtitle" textWrap="{true}">Richtiger Zug Mario du</label>
+		{:else}
+			<label class="subtitle" textWrap="{true}">Mach dich bereit für die Esports Liga!</label>
 		{/if}
 
 		<button on:tap>Neustart!</button>
