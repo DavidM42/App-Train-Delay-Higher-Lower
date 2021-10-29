@@ -36,6 +36,7 @@
   "dependencies": {
     "@nativescript/core": "~7.1.0",
     "@nativescript/theme": "~2.3.0",
+    "nativescript-social-share": "^1.6.0",
     "svelte-native": "~0.9.4"
   },
   "devDependencies": {
