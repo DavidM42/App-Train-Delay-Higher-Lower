@@ -2,7 +2,7 @@
   "name": "app-train-delay-higher-lower",
   "main": "app.js",
   "displayName": "App Train Delay Higher Lower",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Higher Lower Game but as Svelte Native app",
   "author": "DavidM42",
   "license": "SEE LICENSE file",
