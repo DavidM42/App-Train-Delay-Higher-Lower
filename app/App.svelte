@@ -95,11 +95,11 @@
         Highscore.highscore = score;
       }
 
-      // nextGuess after 1s
-      setTimeout(() => nextGuess(), 1000);
+      // nextGuess after 0.5s
+      setTimeout(() => nextGuess(), 500);
     } else {
-      // send to failed screen after 2s
-      setTimeout(() => (failed = true), 2000);
+      // send to failed screen after 0.75s
+      setTimeout(() => (failed = true), 750);
     }
   };
 
