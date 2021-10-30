@@ -14,10 +14,6 @@
 	<flexboxLayout class="darken" flexDirection="column" alignItems="center" justifyContent="center" flexWrap="wrap">
 		<label class="title" textWrap="{true}">Dein Ergebnis</label>
 		<label class="score" textWrap="{true}">{score} Punkte</label>
-		
-		{#if score >= 5}
-			<button text="Score teilen" on:tap="{shareScore}" />
-		{/if}
 
 		{#if score == 0}
 			<!-- TODO think if want to use feedback gifs https://github.com/bradmartin/nativescript-gif  -->
@@ -36,6 +32,10 @@
 		{/if}
 
 		<button on:tap>Neustart!</button>
+
+		{#if score >= 5}
+			<button text="Score teilen" on:tap="{shareScore}" />
+		{/if}
 	</flexboxLayout>
 </page>
 
